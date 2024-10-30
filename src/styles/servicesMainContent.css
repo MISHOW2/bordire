@@ -1,0 +1,97 @@
+
+.servicesMainContent{
+ display: grid;
+ gap: 130px;
+}
+.serviceHeader{
+  background-color: antiquewhite;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.servicesGrid{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 17px;
+}
+
+.servicesGrid p{
+  font-size: 14px;
+  color: #726F6F;
+}
+
+.servicesGrid h4{
+ font-size: 30px;
+ width: 662px;
+}
+
+.main-services{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.services-container{
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
+.services-container:hover{
+  text-align: center;
+  border-left:1px solid rgb(0, 47, 255);
+  border-right: 1px solid rgb(0, 47, 255);
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
+
+.services-container:active{
+  text-align: center;
+  border:1px solid rgb(255, 0, 0);
+ 
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.serviceData{
+  display: flex;
+  gap: 100px;
+}
+.service-content{
+  display: grid;
+  gap: 10px;
+  padding: 0px 40px;
+}
+.serviceTitle{
+  font-size: 34px;
+}
+
+.serviceDescription{
+  font-size: 14px;
+   width: 504px;
+}
+
+.serviceData img{
+  width: 598px;
+  height: 345px;
+}
+
+.contact-us{
+  background-color: #000000;
+  width: 123px;
+  height: 47px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+

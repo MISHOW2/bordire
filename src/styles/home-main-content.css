@@ -1,0 +1,609 @@
+/* Base styles for larger screens */
+.main-content {
+  margin-top: 110px;
+ 
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 160px;
+}
+
+.about {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about h5 {
+  font-size: 18px;
+  width: 668px;
+  font-weight: 300;
+}
+
+.about p {
+  font-size: 16px;
+  color: #5F5E5E;
+}
+
+.vision-mission {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.vision {
+  display: grid;
+  width: 416px;
+  gap: 19px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.vision p{
+  font-size: 14px;
+}
+.boldText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.whatWeoffer {
+  position: relative;
+  background-color: #000000;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+.firstbox{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  padding:  0px 100px;
+}
+
+.firstbox h1 {
+  font-weight: 100;
+  font-size: 27px;
+}
+
+.firstbox p {
+  font-weight: 400;
+
+}
+
+
+.flexboxes {
+  position: absolute;
+  display: flex;
+  gap:38px;
+  justify-content: center;
+  bottom: -270px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flexbox {
+  width: 242px;
+  height: 214px;
+  background-color: #D6C0BA;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title{
+  font-weight: 700;
+}
+
+.description{
+  font-size: 14px;
+}
+
+ 
+
+.dedicated {
+ padding: 0px 30px;
+margin-top: 190px;
+
+}
+
+.left-p-element {
+  font-size: 24px;
+  width: 591px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lower-element {
+  font-size: 18px;
+  width: 600px;
+  text-align: left;
+}
+
+.grid-display { 
+  display: grid;
+  justify-content: right;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.top-element {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.number {
+  color: #5F5E5E;
+  font-size: 30px;
+}
+
+.features {
+  display: grid;
+  gap: 40px;
+  text-align: left;
+  padding: 0 40px;
+}
+
+.ourFeatures {
+  display: flex;
+  gap: 200px;
+ 
+
+}
+
+.ourFeatures img {
+  width: 473px;
+  height: 350px;
+
+}
+
+.ourFeatures div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+}
+
+.ourFeatures div p {
+  font-size: 14px;
+  width: 393px;
+  font-weight: 500;
+}
+
+.ourFeatures div h1 {
+  font-size: 32px;
+  width: 393px;
+  font-weight: bold;
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .main-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about h5 {
+    font-size: 18px;
+  }
+
+  .icon-container img {
+    width: 50px;
+  }
+
+  .boldText {
+    font-size: 14px;
+  }
+
+  .vision p {
+    font-size: 14px;
+  }
+
+  .whatWeoffer {
+    margin-bottom: 100px;
+  }
+
+  .firstbox {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .firstbox h1 {
+    font-size: 15px;
+  }
+
+  .firstbox p {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+ .flexbox {
+    width: 272px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .flexboxes {
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon-containers img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .ourFeatures {
+    display: flex;
+    gap: 100px;
+   
+  
+  }
+  
+  .ourFeatures img {
+    width: 373px;
+    height: 250px;
+  
+  }
+  
+  .ourFeatures div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+  }
+  
+  .ourFeatures div p {
+    font-size: 14px;
+    width: 393px;
+    font-weight: 500;
+  }
+  
+  .ourFeatures div h1 {
+    font-size: 32px;
+    width: 393px;
+    font-weight: bold;
+  }
+  
+}
+/* Medium Devices (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 900px) {
+  .main-content {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about h5 {
+    font-size: 18px;
+  }
+
+  .vision-mission {
+    display: grid;
+  }
+
+  .icon-container img {
+    width: 50px;
+  }
+
+  .boldText {
+    font-size: 14px;
+  }
+
+  .vision p {
+    font-size: 14px;
+  }
+
+
+  .whatWeoffer {
+    margin-bottom: 100px;
+  }
+
+  .firstbox {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .firstbox h1 {
+    font-size: 15px;
+  }
+
+  .firstbox p {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+ .flexbox {
+    width: 272px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .flexboxes {
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon-containers img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+  
+  .ourFeatures {
+    display: flex;
+    gap: 100px;
+   
+  
+  }
+  
+  .ourFeatures img {
+    width: 300px;
+    height: 250px;
+  
+  }
+  
+  .ourFeatures div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+  }
+  
+  .ourFeatures div p {
+    font-size: 14px;
+    width: 393px;
+    font-weight: 500;
+  }
+  
+  .ourFeatures div h1 {
+    font-size: 32px;
+    width: 393px;
+    font-weight: bold;
+  }
+  
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+ 
+
+  .main-content {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about h5 {
+    font-size: 18px;
+  }
+
+  .vision-mission {
+    display: grid;
+  }
+
+  .icon-container img {
+    width: 50px;
+  }
+
+  .boldText {
+    font-size: 14px;
+  }
+
+  .vision p {
+    font-size: 14px;
+  }
+
+
+  .whatWeoffer {
+    margin-bottom: 100px;
+  }
+
+  .firstbox {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .firstbox h1 {
+    font-size: 15px;
+  }
+
+  .firstbox p {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+ .flexbox {
+    width: 272px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .flexboxes {
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon-containers img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+  
+  .ourFeatures {
+    display: flex;
+    gap: 100px;
+   
+  
+  }
+  
+  .ourFeatures img {
+    width: 300px;
+    height: 250px;
+  
+  }
+  
+  .ourFeatures div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+  }
+  
+  .ourFeatures div p {
+    font-size: 14px;
+    width: 393px;
+    font-weight: 500;
+  }
+  
+  .ourFeatures div h1 {
+    font-size: 32px;
+    width: 393px;
+    font-weight: bold;
+  }
+  
+
+
+}
+
+@media (max-width: 599px) {
+  .main-content {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
+
+  .about h5 {
+    font-size: 14px;
+    width: 300px;
+  }
+   .vision-mission{
+    display: grid;
+
+   }
+  .vision {
+    width: 300px;
+  }
+
+  .boldText {
+    font-size: 12px;
+  }
+
+  .vision p {
+    font-size: 12px;
+  }
+
+  
+  .whatWeoffer {
+    margin-bottom: 100px;
+  }
+
+  .firstbox {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .firstbox h1 {
+    font-size: 15px;
+  }
+
+  .firstbox p {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+ .flexbox {
+    width: 272px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .flexboxes {
+    
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon-containers img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+}

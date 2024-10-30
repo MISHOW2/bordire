@@ -1,0 +1,131 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 34px;
+  align-items: center;
+}
+
+.logo img {
+  width: 86px;
+  height: 66px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 37px;
+  list-style: none;
+}
+
+.nav a {
+  color: rgb(83, 80, 80);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #ff1010c5;
+}
+
+.nav a:active {
+  color: #0000004f;
+}
+
+/* Hide the openMenu icon by default */
+.openMenu {
+  display: none;
+}
+
+/* Hide navigation menu by default */
+.navigation {
+  display: none;
+}
+
+.navigation.visible {
+  display: block;
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 767px) {
+
+  .nav {
+    display: none;
+  }
+  header{
+    padding: 0;
+  }
+  /* Show the openMenu icon on small screens */
+  .openMenu {
+    display: block;
+  }
+
+  /* Make navigation visible only when it has the "visible" class on small screens */
+  .navigation {
+    display: none;
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    color: white;
+    z-index: 999;
+  }
+
+  .navigation.visible {
+    display: block;
+  }
+
+  .navLinks {
+    display: block;
+  }
+
+  .navLinks ul {
+    display: grid;
+    gap: 37px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .navLinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .navLinks li a:hover {
+    color: #5F5E5E;
+  }
+}
+
+@media (max-width: 599px) {
+  header{
+    padding: 0;
+  }
+  .logo img {
+    width: 76px;
+    height: 56px;
+  }
+
+  .openMenu img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 466px) {
+  header{
+    padding: 0;
+  }
+  .logo img {
+    width: 60px;
+    height: 50px;
+  }
+
+  .openMenu img {
+    width: 30px;
+    height: 30px;
+  }
+}
