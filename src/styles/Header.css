@@ -1,8 +1,20 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 34px;
   align-items: center;
+  transition: top 0.3s; /* Smooth transition for header hide/show */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: white; /* Optional: Set a background color for the header */
+  top: 0; 
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hidden {
+  top: -100px; 
+  transform: translateY(-100%);
 }
 
 .logo img {
@@ -51,15 +63,16 @@ header {
   .nav {
     display: none;
   }
-  header{
+
+  header {
     padding: 0;
   }
+
   /* Show the openMenu icon on small screens */
   .openMenu {
     display: block;
   }
 
-  /* Make navigation visible only when it has the "visible" class on small screens */
   .navigation {
     display: none;
     position: fixed;
@@ -101,9 +114,10 @@ header {
 }
 
 @media (max-width: 599px) {
-  header{
-    padding: 0;
+  header {
+    padding: 0px 20px;
   }
+
   .logo img {
     width: 76px;
     height: 56px;
@@ -116,9 +130,10 @@ header {
 }
 
 @media (max-width: 466px) {
-  header{
-    padding: 0;
+  header {
+    padding: 0px 20px;
   }
+
   .logo img {
     width: 60px;
     height: 50px;

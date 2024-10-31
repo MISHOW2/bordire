@@ -1,7 +1,7 @@
 import '../styles/home-main-content.css'
 import mission from '../assets/icons/icons8-mission-77.png'
 import vision from '../assets/icons/icons8-vision-77.png'
-
+import dataIcon  from'../assets/icons/icons8-data-backup-60.png' 
 import featureImg from '../assets/images/pexels-cookiecutter-1148820.jpg'
 export default function HomeContent(){
   
@@ -41,28 +41,28 @@ export default function HomeContent(){
       <div className="flexboxes">
         <div className="flexbox">
           <div className="icon-containers">
-
+          <img src={dataIcon} alt="" />
           </div>
           <p  className="title" >IT Hardware</p>
           <p className="description">We provide a selection of high-quality laptops, computers, and accessories tailored to meet the needs of businesses and individuals</p>
         </div>
         <div className="flexbox">
           <div className="icon-containers">
-
+          <img src={dataIcon} alt="" />
           </div>
           <p className="title">Network  Cabling Solution</p>
           <p className="description">Our team specializes in structured voice and data cabling, fiber optic networks, and cable management to ensure reliable and efficient connectivity for your operations</p>
         </div>
         <div className="flexbox">
           <div className="icon-containers">
- 
+                 <img src={dataIcon} alt="" />
           </div>
           <p  className="title" >Data Center Management</p>
           <p className="description">We design and manage data centers and server rooms to ensure optimal performance, security, and reliability for your critical IT infrastructure.</p>
         </div>
         <div className="flexbox">
           <div className="icon-containers">
-             
+          <img src={dataIcon} alt="" />
           </div>
           <p  className="title" >IT Hardware</p>
          

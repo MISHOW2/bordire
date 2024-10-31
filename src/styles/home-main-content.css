@@ -85,22 +85,27 @@
   transform: translate(-50%, -50%);
 }
 
+.icon-containers img{
+  width: 40px;
+}
 .flexbox {
   width: 242px;
-  height: 214px;
+ height: 100%;
   background-color: #D6C0BA;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .title {
   font-weight: 700;
+
+  
 }
 
 .description {
@@ -192,16 +197,19 @@
   }
 
   .about h5 {
-    width: 100%;
+    width: 700px;
     font-size: 16px;
   }
 
   .vision-mission {
+    
     flex-direction: column;
     gap: 40px;
     margin-top: 20px;
   }
-
+  .vision p{
+    width: 600px;
+  }
   .vision {
     width: 100%;
   }
@@ -242,13 +250,13 @@
   }
 
   .ourFeatures {
-    flex-direction: column;
+     display: flex;
     gap: 40px;
     text-align: center;
   }
 
   .ourFeatures img {
-    width: 100%;
+    width: 400px;
     height: auto;
   }
 }
@@ -315,9 +323,9 @@
   .number {
     font-size: 24px;
   }
-
+  
   .ourFeatures div p {
-    font-size: 13px;
+    font-size: 18px;
     width: 100%;
   }
 
@@ -326,20 +334,21 @@
     width: 100%;
   }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .about h5 {
     font-size: 14px;
+     width: 400px;
   }
 
   .vision p,
   .description {
     font-size: 12px;
-  }
 
-  .vision-mission {
-    gap: 20px;
   }
+  .vision-mission p{
+   width: 300px; 
+ }
+  
 
   .flexboxes {
     gap: 20px;
@@ -372,9 +381,105 @@
     font-size: 22px;
   }
 
-  .ourFeatures div p,
-  .ourFeatures div h1 {
+  .ourFeatures div p{
+    font-size: 16px;
+
+  }
+ .ourFeatures img{
+  width: 400px;
+ }
+  .ourFeatures  h1 {
+    font-size: 16px;
+  
+  }
+
+  .firstbox p {
+    font-size: 14px;
+  }
+
+  .firstbox h1 {
+    font-size: 22px;
+  }
+  .flexbox {
+    width: 120px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .description{
+    font-size: 10px;
+  }
+  .whatWeoffer {
+    margin-bottom: 300px;
+  }
+  .flexboxes {
+    
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about h5 {
+    font-size: 14px;
+     width: 400px;
+  }
+
+  .vision p,
+  .description {
     font-size: 12px;
+
+  }
+  .vision-mission p{
+   width: 300px; 
+ }
+  
+
+  .flexboxes {
+    gap: 20px;
+  }
+  .flexbox{
+    width: 60px;
+  }
+  .features {
+    padding: 0 2%;
+  }
+
+  .dedicated {
+    padding: 0 2%;
+    margin-top: 50px;
+  }
+
+  .left-p-element {
+    font-size: 18px;
+  }
+
+  .lower-element {
+    font-size: 14px;
+  }
+
+  .top-element {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+
+  .ourFeatures div p{
+    font-size: 16px;
+
+  }
+ .ourFeatures img{
+  width: 400px;
+ }
+  .ourFeatures  h1 {
+    font-size: 16px;
+  
   }
 
   .firstbox p {

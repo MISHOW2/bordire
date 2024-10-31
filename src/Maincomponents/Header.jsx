@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
 import menuBar from '../assets/icons/icons8-menu-50.png';
@@ -6,13 +6,36 @@ import '../styles/Header.css';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  let lastScrollY = 0;
 
   function openMenu() {
     setMenuOpen((prev) => !prev);
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        setIsHidden(true);
+      } else {
+        // Scrolling up
+        setIsHidden(false);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={`${isHidden ? 'hidden' : ''}`}>
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
