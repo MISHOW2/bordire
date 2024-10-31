@@ -96,3 +96,81 @@
   text-decoration: none;
 }
 
+/* General styles for larger screens remain the same */
+
+/* Mobile Styles (Small screens, up to 768px) */
+@media (max-width: 768px) {
+  .servicesMainContent {
+    gap: 60px; /* Reduce the gap between services */
+    margin-top: 80px; /* Adjust top margin */
+  }
+
+  .servicesGrid h4 {
+    width: 90%; /* Reduce width to fit smaller screens */
+    font-size: 24px; /* Decrease heading font size */
+    margin: 0 auto;
+  }
+
+  .main-services {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .services-container {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .serviceData {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-content {
+    padding: 0 20px;
+    text-align: center; /* Center-align text */
+  }
+
+  .serviceTitle {
+    font-size: 28px;
+  }
+
+  .serviceDescription {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  .serviceData img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .serviceTitle {
+    font-size: 22px; /* Further reduce title font size */
+  }
+
+  .serviceDescription {
+    font-size: 12px; /* Adjust description text size */
+  }
+
+  .serviceData img {
+    width: 100%;
+    height: auto;
+  }
+
+  .servicesGrid h4 {
+    font-size: 20px; /* Further reduce heading font size */
+  }
+
+  .contact-us {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+}
