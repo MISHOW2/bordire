@@ -537,7 +537,7 @@
   }
 
   .whatWeoffer {
-    margin-bottom: 300px; /* Adjust for this specific breakpoint */
+    margin-bottom: 360px; /* Adjust for this specific breakpoint */
   }
 
   .flexboxes {
@@ -560,7 +560,10 @@
   .description{
     font-size: 8px;
   }
-
+  .dedicated{
+  
+    gap: 40px;
+  }
   .ourFeatures{
     display: grid;
   }
