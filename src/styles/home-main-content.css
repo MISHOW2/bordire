@@ -113,21 +113,21 @@
 }
 
 .dedicated {
-  padding: 0 30px; /* Made responsive */
-  margin-top: 190px;
-  display: grid;
-}
+  padding: 0px 30px;
+ margin-top: 190px;
+ 
+ }
 
-.left-p-element {
+ .left-p-element {
   font-size: 24px;
-  width: 40%; /* Made responsive */
+  width: 591px;
   font-weight: bold;
   text-align: left;
 }
 
 .lower-element {
   font-size: 18px;
-  width: 40%; /* Made responsive */
+  width: 600px;
   text-align: left;
 }
 
@@ -336,98 +336,6 @@
     width: 100%;
   }
 }
-@media (max-width: 600px) {
-  .about h5 {
-    font-size: 14px;
-     width: 400px;
-  }
-
-  .vision p,
-  .description {
-    font-size: 12px;
-
-  }
-  .vision-mission p{
-   width: 300px; 
- }
-  
-
-  .flexboxes {
-    gap: 20px;
-  }
-  .flexbox{
-    width: 60px;
-  }
-  .features {
-    padding: 0 2%;
-  }
-
-  .dedicated {
-    padding: 0 2%;
-    margin-top: 50px;
-  }
-
-  .left-p-element {
-    font-size: 18px;
-  }
-
-  .lower-element {
-    font-size: 14px;
-  }
-
-  .top-element {
-    font-size: 18px;
-  }
-
-  .number {
-    font-size: 22px;
-  }
-
-  .ourFeatures{
-    display: grid;
-  }
-  .ourFeatures div p{
-    font-size: 16px;
-
-  }
- .ourFeatures img{
-  width: 400px;
- }
-  .ourFeatures  h1 {
-    font-size: 16px;
-  
-  }
-
-  .firstbox p {
-    font-size: 14px;
-  }
-
-  .firstbox h1 {
-    font-size: 22px;
-  }
-  .flexbox {
-    width: 120px; /* Maintain original width */
-    height: 214px; /* Maintain original height */
-  }
-
-  .description{
-    font-size: 10px;
-  }
-  .whatWeoffer {
-    margin-bottom: 300px;
-  }
-  .flexboxes {
-    
-    gap: 20px;
-    top: 350px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-}
-
 @media (max-width: 500px) {
   .about h5 {
     font-size: 14px;
@@ -444,17 +352,28 @@
   }
 
   .flexboxes {
-    gap: 20px;
+    gap: 30px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+   
   }
 
   .flexbox {
-    width: 60px;
+    width: 150px;
     height: 214px; /* Maintain original height */
+  }
+  .title{
+    font-size: 10px;
+  }
+  .description{
+    font-size: 8px;
+  }
+  .dedicated{
+    padding:0px 30px;
+    gap: 40px;
   }
 
   .features {
@@ -464,10 +383,17 @@
   .dedicated {
     padding: 0 2%;
     margin-top: 50px;
+    padding:0px 30px;
+    gap: 40px;
   }
+ 
 
   .left-p-element {
     font-size: 18px;
+  }
+  .left-p-element{
+    width: 300px;
+    
   }
 
   .lower-element {
@@ -527,7 +453,133 @@
   .whatWeoffer {
     margin-bottom: 300px; /* Adjust as needed */
   }
+  .features{
+    padding:0px 30px;
+  }
   
+}
+
+
+@media (max-width: 600px) {
+  .about h5 {
+    font-size: 14px;
+    width: 400px;
+  }
+
+  .vision p,
+  .description {
+    font-size: 12px;
+  }
+
+  .vision-mission p {
+    width: 300px; 
+  }
+
+  .flexboxes {
+    gap: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+   
+  }
+
+  .flexbox {
+    width: 150px;
+    height: 214px; /* Maintain original height */
+  }
+  .title{
+    font-size: 10px;
+  }
+  .description{
+    font-size: 8px;
+  }
+  .dedicated{
+    padding:0px 30px;
+    gap: 40px;
+  }
+
+  .features {
+    padding: 0 2%;
+  }
+
+  .dedicated {
+    padding: 0 2%;
+    margin-top: 50px;
+    padding:0px 30px;
+    gap: 40px;
+  }
+ 
+
+  .left-p-element {
+    font-size: 18px;
+  }
+  .left-p-element{
+    width: 300px;
+    
+  }
+
+  .lower-element {
+    font-size: 14px;
+  }
+
+  .top-element {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+
+  .ourFeatures {
+    display: grid;
+  }
+
+  .ourFeatures div p {
+    font-size: 16px;
+  }
+
+  .ourFeatures img {
+    width: 400px;
+  }
+
+  .ourFeatures h1 {
+    font-size: 16px;
+  }
+
+  .firstbox p {
+    font-size: 14px;
+  }
+
+  .firstbox h1 {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .ourFeatures{
+    display: grid;
+  }
+  .ourFeatures div p{
+    font-size: 16px;
+
+  }
+ .ourFeatures img{
+  width: 400px;
+ }
+  .ourFeatures  h1 {
+    font-size: 16px;
+  
+  }
+  .whatWeoffer {
+    margin-bottom: 300px; /* Adjust as needed */
+  }
+  .features{
+    padding:0px 30px;
+  }
   
 }
 
@@ -561,14 +613,19 @@
     font-size: 8px;
   }
   .dedicated{
-  
+    padding:0px 30px;
     gap: 40px;
+  }
+  .features{
+    padding:0px 30px;
   }
   .ourFeatures{
     display: grid;
+   
   }
   .left-p-element{
     width: 300px;
+    
   }
  .ourFeatures img{
   width: 300px;

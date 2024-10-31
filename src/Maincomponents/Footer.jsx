@@ -46,22 +46,6 @@ export default function Footer(){
     </div>
      </div>
 
-     <div className="social-icons">
-      <ul>
-        <li>
-          <i className="fa-brands fa-facebook"></i>
-        </li>
-        <li>
-          <i className="fa-brands fa-instagram"></i>
-        </li>
-        <li>
-          <i className="fa-brands fa-whatsapp"></i>
-        </li>
-        <li>
-          <i className="fa-brands fa-twitter"></i>
-        </li>
-      </ul>
-     </div>
     </footer>
   );
 }
