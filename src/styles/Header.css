@@ -1,20 +1,18 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 34px;
   align-items: center;
   transition: top 0.3s; /* Smooth transition for header hide/show */
-  position: fixed;
+
   width: 100%;
   z-index: 1000;
   background: white; /* Optional: Set a background color for the header */
-  top: 0; 
-  transition: transform 0.3s ease-in-out;
+  top: 0; /* Position header at the top */
 }
 
 header.hidden {
-  top: -100px; 
-  transform: translateY(-100%);
+  top: -100px; /* Hide header by moving it above the viewport */
 }
 
 .logo img {
@@ -115,7 +113,7 @@ header.hidden {
 
 @media (max-width: 599px) {
   header {
-    padding: 0px 20px;
+    justify-content: space-around;
   }
 
   .logo img {
@@ -125,7 +123,7 @@ header.hidden {
 
   .openMenu img {
     width: 45px;
-    height: 45px;
+    height: 55px;
   }
 }
 

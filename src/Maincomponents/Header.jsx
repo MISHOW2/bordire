@@ -6,36 +6,33 @@ import '../styles/Header.css';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
-  let lastScrollY = 0;
 
   function openMenu() {
     setMenuOpen((prev) => !prev);
   }
 
+  // Function to close the menu if clicked outside
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        // Scrolling down
-        setIsHidden(true);
-      } else {
-        // Scrolling up
-        setIsHidden(false);
+    function handleOutsideClick(event) {
+      // Check if the click is outside the menu
+      if (!event.target.closest('.navigation') && !event.target.closest('.openMenu')) {
+        setMenuOpen(false); // Close the menu if clicked outside
       }
-      lastScrollY = window.scrollY;
-    };
+    }
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    // Add click event listener when menu is open
+    if (menuOpen) {
+      document.addEventListener('click', handleOutsideClick);
+    }
 
-    // Cleanup function to remove event listener
+    // Cleanup event listener on unmount or when menuOpen state changes
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleOutsideClick);
     };
-  }, []);
+  }, [menuOpen]);
 
   return (
-    <header className={`${isHidden ? 'hidden' : ''}`}>
+    <header>
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
