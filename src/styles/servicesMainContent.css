@@ -65,8 +65,9 @@
   gap: 100px;
 }
 .service-content{
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   padding: 0px 40px;
 }
 .serviceTitle{
@@ -77,13 +78,17 @@
   font-size: 14px;
    width: 504px;
 }
+.grid{
+  display: grid;
+  gap: 50px;
+}
 
 .serviceData img{
   width: 598px;
   height: 345px;
 }
 
-.contact-us{
+.contactUs{
   background-color: #000000;
   width: 123px;
   height: 47px;
@@ -94,88 +99,152 @@
   color: white;
   border-radius: 10px;
   text-decoration: none;
+  
 }
 
-/* Base styles (for larger screens) remain unchanged */
+ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
 
-/* Media queries for smaller screens */
+li {
+  list-style: none; 
+}
+
+.link {
+  text-decoration: none;
+}
 @media (max-width: 600px) {
   .servicesMainContent {
-    gap: 30px; /* Adjusted gap for mobile */
+    gap: 70px;
+    padding: 0 10px;
   }
 
   .serviceHeader {
-    padding: 10px 15px; /* Less padding for mobile */
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
   }
 
   .servicesGrid {
-    gap: 10px; /* Reduced gap */
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .servicesGrid p {
+    font-size: 13px;
+  }
+
+  .servicesGrid h4 {
+    font-size: 18px;
   }
 
   .main-services {
-    flex-direction: column; /* Stack vertically */
-    gap: 30px; /* Adjusted gap for mobile */
+    gap: 20px;
+    align-items: center;
   }
 
   .services-container {
-    width: 80%; /* Adjust container width for small screens */
+    width: 80%;
+    border: none;
+    padding: 10px;
+  }
+
+  .services-container img {
+    width: 40px;
+    height: 30px;
   }
 
   .serviceData {
-    flex-direction: column; /* Stack content vertically */
-    /* Center align content */
-    gap: 20px; /* Smaller gap between elements */
+    flex-direction: column;
+    gap: 30px;
+    
   }
 
   .service-content {
-    padding: 0 10px; /* Less padding for small screens */
+  
+    gap:  10px;
+    padding: 0%;
   }
 
-  .serviceData img {
-    width: 400px; /* Make image responsive */
-    height: auto; /* Keep aspect ratio */
+  .serviceTitle {
+    font-size: 28px;
+    width: 300px;
   }
 
-  .contact-us {
-    width: 80%; /* Full-width button for small screens */
-    max-width: 150px; /* Limit max width */
-    height: 40px; /* Adjust button height */
+  .serviceDescription {
+    font-size: 12px;
+    width: 300px;
+    
+  }
+
+  .serviceImg {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .contactUs {
+    width: 100%;
+    max-width: 180px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 467px) {
   .servicesMainContent {
-    gap: 20px; /* Further reduced gap for very small screens */
+    padding: 10px;
   }
 
   .serviceHeader {
-    padding: 10px; /* Less padding for smaller devices */
+    padding: 5px;
+    font-size: 16px;
   }
 
-  .servicesGrid {
-    gap: 8px; /* Reduced gap */
+  .servicesGrid h4 {
+    font-size: 16px;
   }
 
   .main-services {
-    gap: 20px; /* Adjusted gap */
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .services-container {
-    width: 90%; /* Maximize width for smaller screens */
+    width: 73px;
+    height: 77px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
+
+
+  .services-container:hover{
+    background-color: #B5A6A6;
   }
 
-  .serviceData {
-    gap: 15px; /* Adjusted gap */
-    padding: 0 5px; /* Less padding */
+  .services-container img {
+    width: 19px;
+  }
+
+  .services-container p {
+    font-size: 10px;
   }
 
   .serviceData img {
-    width: 50%; /* Responsive image size */
-    height: auto; /* Keep aspect ratio */
+    width: 250px;
+    height: 250px;
   }
 
-  .contact-us {
-    width: 100%; /* Full-width button for smaller screens */
-    height: 35px; /* Smaller button height */
+  .contactUs {
+    width: 100%;
+    max-width: 120px;
+    height: 35px;
+    font-size: 12px;
+   
   }
 }
+

@@ -583,15 +583,39 @@
   
 }
 
-@media (max-width: 412px) {
+@media (max-width: 467px) {
+  
+   .about p{
+    font-size: 16px;
+   }
+   .about h5{
+    font-size: 12px;
+    width: 300px;
+   }
   .vision-mission p {
+    font-size: 20px;
     width: 300px; 
+  }
+
+  .vision img{
+    width: 40px;
+  }
+
+  .vision p{
+    font-size: 12px;
   }
 
   .whatWeoffer {
     margin-bottom: 360px; /* Adjust for this specific breakpoint */
   }
+   .firstbox div{
+    display: grid;
+    gap: 30px;
+   }
 
+   .firstbox p{
+    font-size: 12px;
+   }
   .flexboxes {
     gap: 30px;
     margin: 0 auto;
@@ -603,14 +627,16 @@
   }
 
   .flexbox {
-    width: 150px;
-    height: 214px; /* Maintain original height */
+    gap: 20px;
+    width: 140px;
+    height: 204px;
+    padding: 10px;
   }
   .title{
-    font-size: 10px;
+    font-size: 8px;
   }
   .description{
-    font-size: 8px;
+    font-size: 12px;
   }
   .dedicated{
     padding:0px 30px;

@@ -5,7 +5,7 @@ import securityIcon from '../assets/icons/icons8-security-shield-50.png';
 import accessIcon from '../assets/icons/icons8-key-security-50.png';
 import networkIcon from '../assets/icons/icons8-network-cable-50.png';
 import { useState } from "react";
-
+import { Link } from 'react-router-dom';
 export default function ServicesContent() {
   const [selectedService, setSelectedService] = useState(servicesData[0]);
 
@@ -44,16 +44,21 @@ export default function ServicesContent() {
         ))}
       </div>
       
-      {selectedService && (
+     <div>
+     {selectedService && (
         <div className="serviceData">
           <div className="service-content">
             <h4 className="serviceTitle">{selectedService.title}</h4>
             <p className="serviceDescription">{selectedService.description}</p>
-            <a href="#" className="contact-us">Contact Us</a>
+           
           </div>
+          <div className="grid">
           <img className="serviceImg" src={selectedService.image} alt={selectedService.title} />
+          <li><Link to="/contact" className="contactUs">Contact Us</Link></li>
+          </div>
         </div>
       )}
+     </div>
     </div>
   );
 }

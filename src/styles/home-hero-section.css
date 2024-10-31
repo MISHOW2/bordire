@@ -150,19 +150,20 @@ h2 {
 
 
   h2 {
-    font-size: 13px;
-    width: 209px;
+    font-size: 22px;
+    width: 300px;
     margin: 0;
   }
 
   .hero-content button {
-    width: 20%;
-    height: 32px;
+    width:100px ;
+    height: 42px;
     font-size: 10px;
   }
 
   .hero-content  div{
-   
+   margin-left: 10px;
+
   }
   .openMenu {
     display: block;

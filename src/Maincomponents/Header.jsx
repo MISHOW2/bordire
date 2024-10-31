@@ -31,6 +31,11 @@ export default function Header() {
     };
   }, [menuOpen]);
 
+  // Close the menu on link click
+  function handleLinkClick() {
+    setMenuOpen(false);
+  }
+
   return (
     <header>
       <div className="logo">
@@ -57,11 +62,11 @@ export default function Header() {
       <div className={`navigation ${menuOpen ? 'visible' : 'hidden'}`}>
         <div className="navLinks">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/whyUs">Why Choose Us</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/bordire/" onClick={handleLinkClick}>HOME</Link></li>
+            <li><Link to="/Services" onClick={handleLinkClick}>SERVICES</Link></li>
+            <li><Link to="/" onClick={handleLinkClick}>ABOUT</Link></li>
+            <li><Link to="/" onClick={handleLinkClick}>WHY CHOOSE US</Link></li>
+            <li><Link to="/" onClick={handleLinkClick}>CONTACT</Link></li>
           </ul>
         </div>
       </div>
