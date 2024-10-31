@@ -1,44 +1,49 @@
 footer {
   color: white;
   margin-top: 100px;
-
   background-color: #000000;
-  display: grid; 
-  padding: 10px 80px;
+  display: grid;
+  padding: 20px 80px;
+  gap: 40px;
 }
 
 .footer-flex {
   display: flex;
   justify-content: space-between;
-
-}
- .Services{
-  display: grid;
-  gap: 15px;
- }
-.Services ul li {
-  margin-top: 10px;
-  list-style: none;
-  color: #FFFFFF;
-  font-weight: 100;
-  font-size: 13px;
-}
-
-.Services p {
-  font-size: 18px;
-}
-
-.footer-nav,.contact{
-  display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
-.footer-nav ul{
-  display: grid;
-  list-style: none;
-  gap: 10px;
+.Services,
+.footer-nav,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
+
+.Services p,
+.footer-nav p,
+.contact p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Services ul,
+.footer-nav ul,
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Services ul li,
+.footer-nav li a,
+.contact li p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
 .footer-nav li a {
   color: #5F5E5E;
   text-decoration: none;
@@ -50,34 +55,15 @@ footer {
   text-decoration: none;
 }
 
-
-.contact ul {
-  list-style: none;
-  font-size: 10px;
-  display: grid;
-  gap: 10px;
-}
-
 .contact span {
-  font-size: 15px;
-  color: white;
-}
-
-.contact li p {
-  color: #5F5E5E;
-  font-size: 12px;
-  width: 300px;
+  font-weight: bold;
 }
 
 .social-icons {
-  margin-top: 40px;
-}
-
-.social-icons ul {
-  list-style: none;
   display: flex;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .social-icons i {
@@ -89,110 +75,74 @@ footer {
   color: red;
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
-
-
-  
-}
-@media (max-width: 767px) {
-
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
   footer {
-    color: white;
-    margin-top: 100px;
-  
-    background-color: #000000;
-    display: grid; 
-    padding: 10px 80px;
+    padding: 20px 40px;
   }
-  
+
   .footer-flex {
-    display: flex;
-    justify-content: space-between;
-  
-  }
-   .Services{
-    display: grid;
-    gap: 15px;
-   }
-  .Services ul li {
-    margin-top: 10px;
-    list-style: none;
-    color: #FFFFFF;
-    font-weight: 100;
-    font-size: 13px;
-  }
-  
-  .Services p {
-    font-size: 18px;
-  }
-  
-  .footer-nav,.contact{
-    display: flex;
     flex-direction: column;
+    gap: 30px;
+  }
+
+  .Services p,
+  .footer-nav p,
+  .contact p {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (600px and up) */
+@media (max-width: 767px) {
+  footer {
+    padding: 20px;
+  }
+
+  .footer-flex {
+    gap: 40px;
+  }
+
+  .Services ul li,
+  .footer-nav li a,
+  .contact li p {
+    font-size: 12px;
+  }
+
+  .contact span {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices (less than 600px) */
+@media (max-width: 599px) {
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-flex {
+    display: grid;
     gap: 20px;
   }
-  
-  .footer-nav ul{
-    display: grid;
-    list-style: none;
-    gap: 10px;
+
+  .Services p,
+  .footer-nav p,
+  .contact p {
+    font-size: 16px;
   }
-  .footer-nav li a {
-    color: #5F5E5E;
-    text-decoration: none;
-    font-size: 13px;
-  }
-  
-  .footer-nav li a:hover {
-    color: #f5f5f5;
-    text-decoration: none;
-  }
-  
-  
-  .contact ul {
-    list-style: none;
-    font-size: 10px;
-    display: grid;
-    gap: 10px;
-  }
-  
-  .contact span {
-    font-size: 15px;
-    color: white;
-  }
-  
+
+  .Services ul li,
+  .footer-nav li a,
   .contact li p {
-    color: #5F5E5E;
     font-size: 12px;
-    width: 300px;
   }
-  
+
   .social-icons {
-    margin-top: 40px;
+    gap: 20px;
   }
-  
-  .social-icons ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-  
+
   .social-icons i {
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 16px;
   }
-  
-  .social-icons i:hover {
-    color: red;
-  }
-
-}
-
-@media (max-width: 599px) {
-
-}
-
-@media (max-width: 466px) {
-
 }

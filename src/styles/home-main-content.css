@@ -1,4 +1,3 @@
-/* Base styles for larger screens */
 .main-content {
   margin-top: 110px;
  
@@ -48,8 +47,6 @@
   font-size: 16px;
   font-weight: 600;
 }
-
-
 .whatWeoffer {
   position: relative;
   background-color: #000000;
@@ -59,15 +56,14 @@
   align-items: center;
   width: 100%;
   justify-content: center;
- 
 }
 
-.firstbox{
+.firstbox {
   display: flex;
   flex-direction: column;
   gap: 30px;
   color: white;
-  padding:  0px 100px;
+  padding: 0 5%; /* Made responsive */
 }
 
 .firstbox h1 {
@@ -77,14 +73,12 @@
 
 .firstbox p {
   font-weight: 400;
-
 }
-
 
 .flexboxes {
   position: absolute;
   display: flex;
-  gap:38px;
+  gap: 38px;
   justify-content: center;
   bottom: -270px;
   left: 50%;
@@ -105,36 +99,33 @@
   padding: 0 20px;
 }
 
-.title{
+.title {
   font-weight: 700;
 }
 
-.description{
+.description {
   font-size: 14px;
 }
 
- 
-
 .dedicated {
- padding: 0px 30px;
-margin-top: 190px;
-
+  padding: 0 5%; /* Made responsive */
+  margin-top: 190px;
 }
 
 .left-p-element {
   font-size: 24px;
-  width: 591px;
+  width: 80%; /* Made responsive */
   font-weight: bold;
   text-align: left;
 }
 
 .lower-element {
   font-size: 18px;
-  width: 600px;
+  width: 80%; /* Made responsive */
   text-align: left;
 }
 
-.grid-display { 
+.grid-display {
   display: grid;
   justify-content: right;
   gap: 20px;
@@ -164,10 +155,8 @@ margin-top: 190px;
 .ourFeatures {
   display: flex;
   gap: 200px;
- 
 
 }
-
 .ourFeatures img {
   width: 473px;
   height: 350px;
@@ -194,399 +183,218 @@ margin-top: 190px;
   font-weight: bold;
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 1024px) {
   .main-content {
-    width: 100%;
-    padding: 0;
-  }
-
-  .about p {
-    font-size: 14px;
-  }
-
-  .about h5 {
-    font-size: 18px;
-  }
-
-  .icon-container img {
-    width: 50px;
-  }
-
-  .boldText {
-    font-size: 14px;
-  }
-
-  .vision p {
-    font-size: 14px;
-  }
-
-  .whatWeoffer {
-    margin-bottom: 100px;
-  }
-
-  .firstbox {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .firstbox h1 {
-    font-size: 15px;
-  }
-
-  .firstbox p {
-    width: 100%;
-    font-size: 11px;
-    font-weight: 100;
-  }
-
- .flexbox {
-    width: 272px; /* Maintain original width */
-    height: 214px; /* Maintain original height */
-  }
-
-  .flexboxes {
-    gap: 20px;
-    top: 350px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .icon-containers img {
-    width: 24px;
-    height: 22px;
-  }
-
-  .title {
-    font-size: 12px;
-  }
-
-  .ourFeatures {
-    display: flex;
+    margin-top: 80px;
     gap: 100px;
-   
-  
-  }
-  
-  .ourFeatures img {
-    width: 373px;
-    height: 250px;
-  
-  }
-  
-  .ourFeatures div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    text-align: left;
-  }
-  
-  .ourFeatures div p {
-    font-size: 14px;
-    width: 393px;
-    font-weight: 500;
-  }
-  
-  .ourFeatures div h1 {
-    font-size: 32px;
-    width: 393px;
-    font-weight: bold;
-  }
-  
-}
-/* Medium Devices (768px - 1023px) */
-@media (min-width: 768px) and (max-width: 900px) {
-  .main-content {
-    width: 100%;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-  }
-
-  .about p {
-    font-size: 14px;
+    padding: 0 ;
   }
 
   .about h5 {
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
   }
 
   .vision-mission {
-    display: grid;
-  }
-
-  .icon-container img {
-    width: 50px;
-  }
-
-  .boldText {
-    font-size: 14px;
-  }
-
-  .vision p {
-    font-size: 14px;
-  }
-
-
-  .whatWeoffer {
-    margin-bottom: 100px;
-  }
-
-  .firstbox {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .firstbox h1 {
-    font-size: 15px;
-  }
-
-  .firstbox p {
-    width: 100%;
-    font-size: 11px;
-    font-weight: 100;
-  }
-
- .flexbox {
-    width: 272px; /* Maintain original width */
-    height: 214px; /* Maintain original height */
-  }
-
-  .flexboxes {
-    gap: 20px;
-    top: 350px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .icon-containers img {
-    width: 24px;
-    height: 22px;
-  }
-
-  .title {
-    font-size: 12px;
-  }
-  
-  .ourFeatures {
-    display: flex;
-    gap: 100px;
-   
-  
-  }
-  
-  .ourFeatures img {
-    width: 300px;
-    height: 250px;
-  
-  }
-  
-  .ourFeatures div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    text-align: left;
-  }
-  
-  .ourFeatures div p {
-    font-size: 14px;
-    width: 393px;
-    font-weight: 500;
-  }
-  
-  .ourFeatures div h1 {
-    font-size: 32px;
-    width: 393px;
-    font-weight: bold;
-  }
-  
-
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
- 
-
-  .main-content {
-    width: 100%;
-    padding: 0;
-    display: grid;
-    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
   }
 
-  .about p {
-    font-size: 14px;
-  }
-
-  .about h5 {
-    font-size: 18px;
-  }
-
-  .vision-mission {
-    display: grid;
-  }
-
-  .icon-container img {
-    width: 50px;
-  }
-
-  .boldText {
-    font-size: 14px;
-  }
-
-  .vision p {
-    font-size: 14px;
-  }
-
-
-  .whatWeoffer {
-    margin-bottom: 100px;
-  }
-
-  .firstbox {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .firstbox h1 {
-    font-size: 15px;
-  }
-
-  .firstbox p {
-    width: 100%;
-    font-size: 11px;
-    font-weight: 100;
-  }
-
- .flexbox {
-    width: 272px; /* Maintain original width */
-    height: 214px; /* Maintain original height */
-  }
-
-  .flexboxes {
-    gap: 20px;
-    top: 350px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .icon-containers img {
-    width: 24px;
-    height: 22px;
-  }
-
-  .title {
-    font-size: 12px;
-  }
-  
-  .ourFeatures {
-    display: flex;
-    gap: 100px;
-   
-  
-  }
-  
-  .ourFeatures img {
-    width: 300px;
-    height: 250px;
-  
-  }
-  
-  .ourFeatures div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    text-align: left;
-  }
-  
-  .ourFeatures div p {
-    font-size: 14px;
-    width: 393px;
-    font-weight: 500;
-  }
-  
-  .ourFeatures div h1 {
-    font-size: 32px;
-    width: 393px;
-    font-weight: bold;
-  }
-  
-
-
-}
-
-@media (max-width: 599px) {
-  .main-content {
-    width: 100%;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    gap: 100px;
-  }
-
-  .about p {
-    font-size: 12px;
-  }
-
-  .about h5 {
-    font-size: 14px;
-    width: 300px;
-  }
-   .vision-mission{
-    display: grid;
-
-   }
   .vision {
-    width: 300px;
-  }
-
-  .boldText {
-    font-size: 12px;
+    width: 100%;
   }
 
   .vision p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
-  
   .whatWeoffer {
-    margin-bottom: 100px;
-  }
-
-  .firstbox {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .firstbox h1 {
-    font-size: 15px;
-  }
-
-  .firstbox p {
+    position: relative;
+    background-color: #000000;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    font-size: 11px;
-    font-weight: 100;
+    justify-content: center;
+    margin-bottom: 20%;
   }
 
- .flexbox {
-    width: 272px; /* Maintain original width */
+  .flexbox {
+    width: 242px; /* Maintain original width */
     height: 214px; /* Maintain original height */
   }
 
+  .flexboxes {
+    gap: 20px;
+    top: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .firstbox {
+    padding: 0 5%;
+  }
+
+  .ourFeatures {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .ourFeatures img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    gap: 60px;
+  }
+
+  .about h5 {
+    font-size: 14px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .vision-mission {
+    gap: 30px;
+  }
+
+  .vision p {
+    font-size: 13px;
+  }
+  .whatWeoffer{
+    margin-bottom:290px ;
+  }
+  .flexboxes {
+    gap: 30px;
+  }
+
+  .flexbox {
+    width: 200px;
+  }
+
+  .features {
+    padding: 0 5%;
+  }
+
+  .dedicated {
+    margin-top: 80px;
+    padding: 0 5%;
+  }
+
+  .left-p-element {
+    font-size: 20px;
+  }
+
+  .lower-element {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .grid-display {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .top-element {
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .ourFeatures div p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .ourFeatures div h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h5 {
+    font-size: 14px;
+  }
+
+  .vision p,
+  .description {
+    font-size: 12px;
+  }
+
+  .vision-mission {
+    gap: 20px;
+  }
+
+  .flexboxes {
+    gap: 20px;
+  }
+  .flexbox{
+    width: 60px;
+  }
+  .features {
+    padding: 0 2%;
+  }
+
+  .dedicated {
+    padding: 0 2%;
+    margin-top: 50px;
+  }
+
+  .left-p-element {
+    font-size: 18px;
+  }
+
+  .lower-element {
+    font-size: 14px;
+  }
+
+  .top-element {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+
+  .ourFeatures div p,
+  .ourFeatures div h1 {
+    font-size: 12px;
+  }
+
+  .firstbox p {
+    font-size: 14px;
+  }
+
+  .firstbox h1 {
+    font-size: 22px;
+  }
+  .flexbox {
+    width: 120px; /* Maintain original width */
+    height: 214px; /* Maintain original height */
+  }
+
+  .description{
+    font-size: 10px;
+  }
+  .whatWeoffer {
+    margin-bottom: 300px;
+  }
   .flexboxes {
     
     gap: 20px;
@@ -596,14 +404,5 @@ margin-top: 190px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-  }
-
-  .icon-containers img {
-    width: 24px;
-    height: 22px;
-  }
-
-  .title {
-    font-size: 12px;
   }
 }
