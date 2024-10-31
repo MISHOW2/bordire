@@ -5,10 +5,10 @@ header {
   align-items: center;
   transition: top 0.3s; /* Smooth transition for header hide/show */
 
-  width: 100%;
-  z-index: 1000;
+ 
+
   background: white; /* Optional: Set a background color for the header */
-  top: 0; /* Position header at the top */
+ /* Position header at the top */
 }
 
 header.hidden {
